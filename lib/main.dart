@@ -27,11 +27,17 @@ class MyApp extends StatelessWidget {
         //Containerは制約がないと大きくなりすぎる
         body: SafeArea(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: 10,horizontal: 100),
+            margin: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.all(10),
             height: 100.0,
             width: 100,
             color: Colors.teal,
-            child: Center(child: Text('data')),
+            child: const Center(
+              child: Text(
+                'Container center',
+                textAlign: TextAlign.center,
+              ),
+            ),
           ),
         ),
       ),
