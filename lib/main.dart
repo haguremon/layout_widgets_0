@@ -104,6 +104,7 @@ class MyApp extends StatelessWidget {
                   )
             ],
           ),
+           SizedBox(height: 50,),
            Row(
             //mainAxisAlignmentはchildrenの配置についてかな　MainAxisSize.minだと全く意味ない
             // mainAxisAlignment: MainAxisAlignment.center,
